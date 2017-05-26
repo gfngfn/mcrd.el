@@ -36,17 +36,17 @@
 
   '("let" "let-mutable" "let-lazy" "in" "and"
     "match" "with" "if" "then" "else"
-    "type" "of"
-    "module" "struct" "end-struct"
+    "type" "val" "of"
+    "module" "struct" "sig" "end"
     "before" "new-global-hash")
 
   '(("\\(\\\\\\(?:\\\\\\\\\\)*[a-zA-Z\\-]+\\)\\>"
      (1 'mcrd-control-sequence-name-face t))
-    ("\\(#[a-zA-Z\\-]+\\)\\>"
+    ("\\(#[a-z][0-9A-Za-z\\-]+\\)\\>"
      (1 'mcrd-id-name-face t))
-    ("\\(\\.[a-zA-Z\\-]+\\)\\>"
+    ("\\(\\.[a-z][0-9A-Za-z\\-]+\\)\\>"
      (1 'mcrd-class-name-face t))
-    ("\\(@[a-zA-Z\\-]+\\)\\>"
+    ("\\(@[a-z][0-9A-Za-z\\-]*\\)\\>"
      (1 'mcrd-var-in-string-face t))
     ("\\(\\\\\\(?:@\\|`\\|\\*\\| \\|%\\||\\|;\\|{\\|}\\|\\\\\\)\\)"
      (1 'mcrd-escaped-character t))
